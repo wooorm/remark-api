@@ -1,0 +1,3 @@
+# Smol package
+
+## API

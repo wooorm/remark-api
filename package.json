@@ -1,0 +1,149 @@
+{
+  "name": "remark-api",
+  "version": "0.0.0",
+  "description": "remark plugin to generate an API section",
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "application",
+    "generation",
+    "interface",
+    "markdown",
+    "mdast",
+    "plugin",
+    "programming",
+    "remark",
+    "remark-plugin",
+    "unified"
+  ],
+  "repository": "wooorm/remark-api",
+  "bugs": "https://github.com/wooorm/remark-api/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "lib/",
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.js"
+  ],
+  "dependencies": {
+    "@types/mdast": "^4.0.0",
+    "mdast-util-heading-range": "^4.0.0",
+    "module-exports": "^2.0.0",
+    "package-exports": "^1.0.0",
+    "vfile": "^6.0.0",
+    "vfile-find-up": "^7.0.0"
+  },
+  "#": "to do: remove the unused `type-fest` in the future -- this only prevents a broken version 3 from being directly in `node_modules`, which results in TS build being broken",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "c8": "^9.0.0",
+    "prettier": "^3.0.0",
+    "remark": "^15.0.1",
+    "remark-cli": "^12.0.0",
+    "remark-preset-wooorm": "^10.0.0",
+    "to-vfile": "^8.0.0",
+    "type-coverage": "^2.0.0",
+    "type-fest": "^4.0.0",
+    "typescript": "^5.0.0",
+    "xo": "^0.58.0"
+  },
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build && type-coverage",
+    "prepack": "npm run build && npm run format",
+    "format": "remark . --frail --output --quiet && prettier . --log-level warn --write && xo --fix",
+    "test": "npm run build && npm run format && npm run test-coverage",
+    "test-api": "node --conditions development test/index.js",
+    "test-coverage": "c8 --100 --reporter lcov npm run test-api"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-wooorm",
+      "./index.js",
+      [
+        "remark-toc",
+        {
+          "maxDepth": 4
+        }
+      ],
+      "remark-validate-links"
+    ]
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "ignoreCatch": true,
+    "strict": true
+  },
+  "xo": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.d.ts"
+        ],
+        "rules": {
+          "@typescript-eslint/array-type": [
+            "error",
+            {
+              "default": "generic"
+            }
+          ],
+          "@typescript-eslint/ban-types": [
+            "error",
+            {
+              "types": {
+                "Symbol": false
+              },
+              "extendDefaults": true
+            }
+          ],
+          "@typescript-eslint/consistent-type-definitions": [
+            "error",
+            "interface"
+          ]
+        }
+      },
+      {
+        "files": [
+          "test/**/*.js"
+        ],
+        "rules": {
+          "no-await-in-loop": "off"
+        }
+      }
+    ],
+    "prettier": true,
+    "rules": {
+      "logical-assignment-operators": "off",
+      "max-depth": "off",
+      "no-bitwise": "off",
+      "unicorn/prefer-at": "off",
+      "unicorn/prevent-abbreviations": [
+        "error",
+        {
+          "allowList": {
+            "jsDocParameter": true,
+            "jsDocParameters": true,
+            "jsDocs": true
+          }
+        }
+      ]
+    }
+  }
+}
