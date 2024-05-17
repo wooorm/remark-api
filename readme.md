@@ -83,7 +83,9 @@ compatible with Node.js 18.
 
 Special thanks go out to:
 
-* [**@bertspaan**][github-bertspaan] for funding the initial development
+* [**@allmaps**][github-allmaps] and
+  [Royal Netherlands Academy of Arts and Sciences (KNAW)][knaw]
+  for funding the initial development
 
 ## Contribute
 
@@ -112,11 +114,13 @@ See [How to Contribute to Open Source][open-source-guide-contribute].
 
 [github-gist-esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
-[github-bertspaan]: https://github.com/bertspaan
+[github-allmaps]: https://github.com/allmaps
 
 [github-remark]: https://github.com/remarkjs/remark
 
 [github-unified]: https://github.com/unifiedjs/unified
+
+[knaw]: https://www.knaw.nl/en
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
