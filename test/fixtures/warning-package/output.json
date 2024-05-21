@@ -1,0 +1,1090 @@
+[
+  {
+    "ancestors": [
+      {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "depth": 1,
+            "children": [
+              {
+                "type": "text",
+                "value": "Warning package",
+                "position": {
+                  "start": {
+                    "line": 1,
+                    "column": 3,
+                    "offset": 2
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 18,
+                    "offset": 17
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 1,
+                "column": 1,
+                "offset": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 18,
+                "offset": 17
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 2,
+            "children": [
+              {
+                "type": "text",
+                "value": "API",
+                "position": {
+                  "start": {
+                    "line": 3,
+                    "column": 4,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 7,
+                    "offset": 25
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 1,
+                "offset": 19
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 3,
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "sum(a, b) (default)"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Parameters"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "spread": false,
+            "ordered": false,
+            "children": [
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "a"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "b"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Returns"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "any"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 1,
+            "offset": 26
+          }
+        }
+      },
+      {
+        "type": "heading",
+        "depth": 2,
+        "children": [
+          {
+            "type": "text",
+            "value": "API",
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 4,
+                "offset": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 3,
+            "column": 1,
+            "offset": 19
+          },
+          "end": {
+            "line": 3,
+            "column": 7,
+            "offset": 25
+          }
+        }
+      }
+    ],
+    "cause": {
+      "column": 1,
+      "message": "Unexpected missing description for function or call",
+      "line": 3,
+      "name": "3:1-5:2",
+      "place": {
+        "start": {
+          "line": 3,
+          "column": 1,
+          "offset": 50
+        },
+        "end": {
+          "line": 5,
+          "column": 2,
+          "offset": 102
+        }
+      },
+      "reason": "Unexpected missing description for function or call",
+      "ruleId": "description-missing",
+      "source": "module-exports",
+      "file": "index.js"
+    },
+    "column": 1,
+    "fatal": false,
+    "message": "Unexpected warning processing `index.js`",
+    "line": 3,
+    "name": "input.md:3:1-3:7",
+    "place": {
+      "start": {
+        "line": 3,
+        "column": 1,
+        "offset": 19
+      },
+      "end": {
+        "line": 3,
+        "column": 7,
+        "offset": 25
+      }
+    },
+    "reason": "Unexpected warning processing `index.js`",
+    "ruleId": "message",
+    "source": "remark-api",
+    "file": "input.md"
+  },
+  {
+    "ancestors": [
+      {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "depth": 1,
+            "children": [
+              {
+                "type": "text",
+                "value": "Warning package",
+                "position": {
+                  "start": {
+                    "line": 1,
+                    "column": 3,
+                    "offset": 2
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 18,
+                    "offset": 17
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 1,
+                "column": 1,
+                "offset": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 18,
+                "offset": 17
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 2,
+            "children": [
+              {
+                "type": "text",
+                "value": "API",
+                "position": {
+                  "start": {
+                    "line": 3,
+                    "column": 4,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 7,
+                    "offset": 25
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 1,
+                "offset": 19
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 3,
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "sum(a, b) (default)"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Parameters"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "spread": false,
+            "ordered": false,
+            "children": [
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "a"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "b"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Returns"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "any"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 1,
+            "offset": 26
+          }
+        }
+      },
+      {
+        "type": "heading",
+        "depth": 2,
+        "children": [
+          {
+            "type": "text",
+            "value": "API",
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 4,
+                "offset": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 3,
+            "column": 1,
+            "offset": 19
+          },
+          "end": {
+            "line": 3,
+            "column": 7,
+            "offset": 25
+          }
+        }
+      }
+    ],
+    "cause": {
+      "column": 1,
+      "message": "Unexpected missing description for return value of function or call",
+      "line": 3,
+      "name": "3:1-5:2",
+      "place": {
+        "start": {
+          "line": 3,
+          "column": 1,
+          "offset": 50
+        },
+        "end": {
+          "line": 5,
+          "column": 2,
+          "offset": 102
+        }
+      },
+      "reason": "Unexpected missing description for return value of function or call",
+      "ruleId": "description-missing",
+      "source": "module-exports",
+      "file": "index.js"
+    },
+    "column": 1,
+    "fatal": false,
+    "message": "Unexpected warning processing `index.js`",
+    "line": 3,
+    "name": "input.md:3:1-3:7",
+    "place": {
+      "start": {
+        "line": 3,
+        "column": 1,
+        "offset": 19
+      },
+      "end": {
+        "line": 3,
+        "column": 7,
+        "offset": 25
+      }
+    },
+    "reason": "Unexpected warning processing `index.js`",
+    "ruleId": "message",
+    "source": "remark-api",
+    "file": "input.md"
+  },
+  {
+    "ancestors": [
+      {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "depth": 1,
+            "children": [
+              {
+                "type": "text",
+                "value": "Warning package",
+                "position": {
+                  "start": {
+                    "line": 1,
+                    "column": 3,
+                    "offset": 2
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 18,
+                    "offset": 17
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 1,
+                "column": 1,
+                "offset": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 18,
+                "offset": 17
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 2,
+            "children": [
+              {
+                "type": "text",
+                "value": "API",
+                "position": {
+                  "start": {
+                    "line": 3,
+                    "column": 4,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 7,
+                    "offset": 25
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 1,
+                "offset": 19
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 3,
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "sum(a, b) (default)"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Parameters"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "spread": false,
+            "ordered": false,
+            "children": [
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "a"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "b"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Returns"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "any"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 1,
+            "offset": 26
+          }
+        }
+      },
+      {
+        "type": "heading",
+        "depth": 2,
+        "children": [
+          {
+            "type": "text",
+            "value": "API",
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 4,
+                "offset": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 3,
+            "column": 1,
+            "offset": 19
+          },
+          "end": {
+            "line": 3,
+            "column": 7,
+            "offset": 25
+          }
+        }
+      }
+    ],
+    "cause": {
+      "column": 29,
+      "message": "Unexpected missing `@param` annotation for parameter `a`",
+      "line": 3,
+      "name": "3:29-3:30",
+      "place": {
+        "start": {
+          "line": 3,
+          "column": 29,
+          "offset": 78
+        },
+        "end": {
+          "line": 3,
+          "column": 30,
+          "offset": 79
+        }
+      },
+      "reason": "Unexpected missing `@param` annotation for parameter `a`",
+      "ruleId": "parameter-missing",
+      "source": "module-exports",
+      "file": "index.js"
+    },
+    "column": 1,
+    "fatal": false,
+    "message": "Unexpected warning processing `index.js`",
+    "line": 3,
+    "name": "input.md:3:1-3:7",
+    "place": {
+      "start": {
+        "line": 3,
+        "column": 1,
+        "offset": 19
+      },
+      "end": {
+        "line": 3,
+        "column": 7,
+        "offset": 25
+      }
+    },
+    "reason": "Unexpected warning processing `index.js`",
+    "ruleId": "message",
+    "source": "remark-api",
+    "file": "input.md"
+  },
+  {
+    "ancestors": [
+      {
+        "type": "root",
+        "children": [
+          {
+            "type": "heading",
+            "depth": 1,
+            "children": [
+              {
+                "type": "text",
+                "value": "Warning package",
+                "position": {
+                  "start": {
+                    "line": 1,
+                    "column": 3,
+                    "offset": 2
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 18,
+                    "offset": 17
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 1,
+                "column": 1,
+                "offset": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 18,
+                "offset": 17
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 2,
+            "children": [
+              {
+                "type": "text",
+                "value": "API",
+                "position": {
+                  "start": {
+                    "line": 3,
+                    "column": 4,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 7,
+                    "offset": 25
+                  }
+                }
+              }
+            ],
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 1,
+                "offset": 19
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          },
+          {
+            "type": "heading",
+            "depth": 3,
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "sum(a, b) (default)"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Parameters"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "spread": false,
+            "ordered": false,
+            "children": [
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "a"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "spread": false,
+                "checked": null,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "inlineCode",
+                        "value": "b"
+                      },
+                      {
+                        "type": "text",
+                        "value": " ("
+                      },
+                      {
+                        "type": "inlineCode",
+                        "value": "any"
+                      },
+                      {
+                        "type": "text",
+                        "value": ")"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "depth": 6,
+            "children": [
+              {
+                "type": "text",
+                "value": "Returns"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "inlineCode",
+                "value": "any"
+              },
+              {
+                "type": "text",
+                "value": "."
+              }
+            ]
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 1,
+            "column": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 1,
+            "offset": 26
+          }
+        }
+      },
+      {
+        "type": "heading",
+        "depth": 2,
+        "children": [
+          {
+            "type": "text",
+            "value": "API",
+            "position": {
+              "start": {
+                "line": 3,
+                "column": 4,
+                "offset": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 7,
+                "offset": 25
+              }
+            }
+          }
+        ],
+        "position": {
+          "start": {
+            "line": 3,
+            "column": 1,
+            "offset": 19
+          },
+          "end": {
+            "line": 3,
+            "column": 7,
+            "offset": 25
+          }
+        }
+      }
+    ],
+    "cause": {
+      "column": 32,
+      "message": "Unexpected missing `@param` annotation for parameter `b`",
+      "line": 3,
+      "name": "3:32-3:33",
+      "place": {
+        "start": {
+          "line": 3,
+          "column": 32,
+          "offset": 81
+        },
+        "end": {
+          "line": 3,
+          "column": 33,
+          "offset": 82
+        }
+      },
+      "reason": "Unexpected missing `@param` annotation for parameter `b`",
+      "ruleId": "parameter-missing",
+      "source": "module-exports",
+      "file": "index.js"
+    },
+    "column": 1,
+    "fatal": false,
+    "message": "Unexpected warning processing `index.js`",
+    "line": 3,
+    "name": "input.md:3:1-3:7",
+    "place": {
+      "start": {
+        "line": 3,
+        "column": 1,
+        "offset": 19
+      },
+      "end": {
+        "line": 3,
+        "column": 7,
+        "offset": 25
+      }
+    },
+    "reason": "Unexpected warning processing `index.js`",
+    "ruleId": "message",
+    "source": "remark-api",
+    "file": "input.md"
+  }
+]

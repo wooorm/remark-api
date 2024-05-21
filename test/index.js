@@ -1,3 +1,7 @@
+/**
+ * @typedef {import('vfile-message').VFileMessage} VFileMessage
+ */
+
 import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
 import process from 'node:process'
@@ -29,29 +33,90 @@ test('fixtures', async function (t) {
 
     await t.test(folder, async function () {
       const folderUrl = new URL(folder + '/', base)
-      const outputUrl = new URL('output.md', folderUrl)
+      const outputMarkdownUrl = new URL('output.md', folderUrl)
+      const outputJsonUrl = new URL('output.json', folderUrl)
       const input = await read(new URL('input.md', folderUrl))
       const processor = remark().use(remarkApi)
 
       await processor.process(input)
 
       /** @type {VFile} */
-      let output
+      let outputMarkdown
 
       try {
         if ('UPDATE' in process.env) {
           throw new Error('Updating…')
         }
 
-        output = await read(outputUrl)
+        outputMarkdown = await read(outputMarkdownUrl)
       } catch {
-        output = new VFile({path: outputUrl, value: String(input)})
-        await write(output)
+        outputMarkdown = new VFile({
+          path: outputMarkdownUrl,
+          value: String(input)
+        })
+        await write(outputMarkdown)
       }
 
-      assert.equal(String(input), String(output))
+      /** @type {Array<VFileMessage>} */
+      const simplified = JSON.parse(JSON.stringify(input.messages))
+      for (const message of simplified) {
+        dropPath(message)
+      }
+
+      /** @type {Array<VFileMessage>} */
+      let outputJson
+
+      try {
+        if ('UPDATE' in process.env) {
+          throw new Error('Updating…')
+        }
+
+        outputJson = JSON.parse(await fs.readFile(outputJsonUrl, 'utf8'))
+      } catch {
+        outputJson = simplified
+        await fs.writeFile(
+          outputJsonUrl,
+          JSON.stringify(simplified, undefined, 2) + '\n'
+        )
+      }
+
+      assert.equal(String(input), String(outputMarkdown))
+      assert.deepEqual(simplified, outputJson)
     })
   }
 
   await fs.rename(backupPackageUrl, rootPackageUrl)
 })
+
+/**
+ * @param {Error} message
+ *   Message.
+ * @returns {undefined}
+ *   Nothing.
+ */
+function dropPath(message) {
+  if ('file' in message && typeof message.file === 'string') {
+    message.file = dropDirname(message.file)
+  }
+
+  if ('name' in message) {
+    message.name = dropDirname(message.name)
+  }
+
+  if (message.cause) {
+    dropPath(/** @type {Error} */ (message.cause))
+  }
+}
+
+/**
+ * @param {string} value
+ *   Message.
+ * @returns {string}
+ *   Nothing.
+ */
+function dropDirname(value) {
+  const slash = value.lastIndexOf('/')
+  const backslash = value.lastIndexOf('\\')
+  const lastIndex = slash > backslash ? slash : backslash
+  return lastIndex > -1 ? value.slice(lastIndex + 1) : value
+}

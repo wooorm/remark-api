@@ -36,11 +36,13 @@
   ],
   "dependencies": {
     "@types/mdast": "^4.0.0",
+    "@types/unist": "^3.0.0",
     "mdast-util-heading-range": "^4.0.0",
     "module-exports": "^2.0.0",
     "package-exports": "^1.0.0",
     "vfile": "^6.0.0",
-    "vfile-find-up": "^7.0.0"
+    "vfile-find-up": "^7.0.0",
+    "vfile-message": "^4.0.0"
   },
   "#": "to do: remove the unused `type-fest` in the future -- this only prevents a broken version 3 from being directly in `node_modules`, which results in TS build being broken",
   "devDependencies": {
@@ -89,6 +91,9 @@
     "atLeast": 100,
     "detail": true,
     "ignoreCatch": true,
+    "ignoreFiles": [
+      "test/fixtures/warning-package/index.js"
+    ],
     "strict": true
   },
   "xo": {
