@@ -123,22 +123,16 @@
             "interface"
           ]
         }
-      },
-      {
-        "files": [
-          "test/**/*.js"
-        ],
-        "rules": {
-          "no-await-in-loop": "off"
-        }
       }
     ],
     "prettier": true,
     "rules": {
       "logical-assignment-operators": "off",
       "max-depth": "off",
+      "no-await-in-loop": "off",
       "no-bitwise": "off",
       "unicorn/prefer-at": "off",
+      "unicorn/prefer-string-replace-all": "off",
       "unicorn/prevent-abbreviations": [
         "error",
         {

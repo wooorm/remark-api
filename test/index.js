@@ -38,6 +38,8 @@ test('fixtures', async function (t) {
       const input = await read(new URL('input.md', folderUrl))
       const processor = remark().use(remarkApi)
 
+      input.value = String(input).replace(/\r\n/g, '\n')
+
       await processor.process(input)
 
       /** @type {VFile} */
@@ -49,6 +51,7 @@ test('fixtures', async function (t) {
         }
 
         outputMarkdown = await read(outputMarkdownUrl)
+        outputMarkdown.value = String(outputMarkdown).replace(/\r\n/g, '\n')
       } catch {
         outputMarkdown = new VFile({
           path: outputMarkdownUrl,

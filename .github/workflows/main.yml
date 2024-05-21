@@ -14,10 +14,10 @@ jobs:
       matrix:
         node:
           - lts/hydrogen
-          - lts/iron
+          - node
         os:
           - ubuntu-latest
-          # - windows-latest
+          - windows-latest
 name: main
 on:
   - pull_request
